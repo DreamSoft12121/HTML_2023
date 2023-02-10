@@ -7,9 +7,7 @@
 	</head>
 
 	<body> 
-		<p>
-		<img scr="xd.jpg">
-		</p>
+		<p><IMG SCR=xd.jpg ></p>
 	</body>
 
 </HTML>
