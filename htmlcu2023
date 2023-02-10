@@ -8,7 +8,7 @@
 
 	<body> 
 		<p>
-		<img scr=jijijija2.jpg align=right>
+		<img scr="jijijija2.jpg" align=right>
 		</p>
 	</body>
 
