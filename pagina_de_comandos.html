@@ -1,0 +1,150 @@
+<HTML> 
+	<HEAD>
+		<Title>Comandos de Git</Title>
+	</HEAD>
+
+	<BODY>
+
+		<p align = center><h2>¿Que es git?</p></h2>
+		<p> Git es un sistema de control de versiones de código abierto y distribuido que se utiliza para almacenar y administrar el historial de cambios en el software. 
+	            Git fue creado en 2005 por Linus Torvalds, el creador del kernel de Linux, y desde entonces se ha convertido en uno de los sistemas de control de versiones más populares y ampliamente utilizados en el mundo.
+		    Git permite a los desarrolladores realizar un seguimiento de los cambios realizados en el código y revertir los cambios si es necesario. Además, Git permite a los 
+		    desarrolladores trabajar en equipo en el mismo proyecto, con varios desarrolladores que pueden realizar cambios y contribuir simultáneamente al mismo código.</p>
+		<br>
+		<p><h3>Litas de conados</p></h3>
+
+		<ol>
+		    <li><a href="#Init">Init</li></a>
+
+		    <li><a href="#Status">Status</li></a>
+
+		    <li><a href="#Branch">Branch</li></a>
+
+		    <li><a href="#Checkout">Checkout</li></a>
+
+		    <li><a href="#Remote">Remote</li></a>
+
+		    <li><a href="#Pull">Pull</li></a>
+
+		    <li><a href="#Clone">Clone</li></a>
+
+		    <li><a href="#Commit">Commit</li></a>
+
+		</ol>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<p><h3 id="Init">Init:</h3></p>
+		<p>El comando "git init" es uno de los comandos más importantes en Git que se utiliza para inicializar un repositorio Git en un directorio local. 
+		   Este comando crea un nuevo repositorio Git en el directorio actual y establece todos los archivos y carpetas en ese directorio como parte del repositorio.
+		   Una vez que se ha inicializado un repositorio, los archivos y carpetas dentro del directorio pueden ser controlados por Git, lo que significa que se pueden 
+		   realizar seguimientos de los cambios realizados en los archivos y almacenar versiones anteriores de los archivos.El comando "git init" se utiliza en la línea de 
+		   comandos y se puede ejecutar de la siguiente manera: git init Después de ejecutar el comando, Git creará un nuevo directorio oculto llamado ".git" que contiene toda la 
+		   información sobre el repositorio, como los cambios realizados en los archivos, el historial de versiones y la información de las ramas.Es importante tener en cuenta 
+		   que "git init" solo debe ejecutarse una vez en un directorio dado, ya que inicializar un repositorio existente sobrescribirá los datos existentes y creará un nuevo repositorio desde cero.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Status">Status:</h3></p>
+		<p>El comando git status es un comando muy útil en Git que se utiliza para ver el estado actual de un repositorio. 
+		   Este comando muestra información sobre los archivos y carpetas en el directorio local que están siendo controlados por Git, incluyendo los archivos que están siendo seguidos, 
+		   los archivos que han sido modificados y los archivos que aún no han sido añadidos al control de versiones.El comando git status se utiliza en la línea de comandos y se puede 
+		   ejecutar de la siguiente manera: git status Después de ejecutar el comando, Git mostrará una lista de los archivos y carpetas en el directorio local, incluyendo los archivos 
+		   que están siendo seguidos, los archivos que han sido modificados y los archivos que aún no han sido añadidos al control de versiones.El resultado también incluirá información 
+		   sobre la rama actual en la que se encuentra el repositorio y si hay cambios que aún no han sido confirmados o añadidos a una nueva versión.El comando git status es muy útil 
+		   para tener una visión general de los cambios realizados en un repositorio y para determinar qué archivos y carpetas deben ser añadidos o confirmados.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Branch">Branch:</h3></p>
+		<p>El comando git branch es uno de los comandos más importantes en Git que se utiliza para crear, listar y manipular ramas en un repositorio Git. Una rama en Git es una línea separada de 
+		   desarrollo que permite trabajar en un conjunto de cambios sin afectar al trabajo en la rama principal o en otras ramas.El comando git branch se utiliza en la línea de comandos y tiene 
+		   varios modos de uso, incluyendo:
+		<ol>
+
+		    <li>git branch: Este modo muestra una lista de todas las ramas en el repositorio, incluyendo la rama actual.
+
+		    <li>git branch <nombre_rama>: Este modo se utiliza para crear una nueva rama con el nombre especificado.
+
+		    <li>git branch -d <nombre_rama>: Este modo se utiliza para eliminar una rama específica.
+
+		    <li>git branch -m <nombre_nuevo>: Este modo se utiliza para cambiar el nombre de una rama existente.
+		
+		</ol>
+
+		El comando git branch es muy útil para trabajar en proyectos con varios desarrolladores o para experimentar con nuevas funcionalidades sin afectar a la rama principal del proyecto. 
+		Al crear una nueva rama, se pueden realizar cambios y experimentar con nuevas funcionalidades sin afectar a la rama principal. Una vez que se han completado los cambios, se pueden 
+		fusionar de nuevo en la rama principal.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Checkout">Checkout:</h3></p>
+		<p>El comando git checkout es un comando importante en Git que se utiliza para cambiar entre ramas en un repositorio Git o para descartar cambios locales.
+		   El comando git checkout tiene varios modos de uso, incluyendo:
+		<ol>
+	
+		    <li>git checkout <nombre_rama>: Este modo se utiliza para cambiar a una rama específica en el repositorio.
+		    
+		    <li>git checkout -b <nombre_rama>: Este modo se utiliza para crear una nueva rama y cambiar a ella en un solo paso.
+
+		    <li>git checkout -- <nombre_archivo>: Este modo se utiliza para descartar cambios locales en un archivo específico.
+
+		El comando git checkout es muy útil para cambiar entre ramas en un proyecto y para descartar cambios locales que ya no se necesitan o que están causando problemas. 
+		Al cambiar a una rama diferente, se pueden ver los cambios realizados en esa rama y trabajar en ellos. Al descartar cambios locales, se pueden restaurar los archivos 
+		a su versión anterior sin perder los cambios realizados en otras ramas.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Remote">Remote:</h3></p>
+		<p>El comando git remote es un comando de Git que se utiliza para gestionar los repositorios remotos asociados a un repositorio local. Un repositorio remoto es una copia del 
+		   repositorio en un servidor externo que se puede acceder y clonar desde cualquier lugar.El comando git remote tiene varios modos de uso, incluyendo:
+		<ol>
+	
+		    <li>git remote: Este modo muestra una lista de todos los repositorios remotos asociados con el repositorio local.
+		    
+		    <li>git remote add <nombre_remoto> <url>: Este modo se utiliza para agregar un nuevo repositorio remoto con un nombre específico.
+
+		    <li>git remote remove <nombre_remoto>: Este modo se utiliza para eliminar un repositorio remoto específico.
+
+		    <li>git remote show <nombre_remoto>: Este modo muestra información detallada sobre un repositorio remoto específico, incluyendo la URL y la dirección de la rama principal.
+
+		    <li>git remote set-url <nombre_remoto> <nueva_url>: Este modo se utiliza para cambiar la URL de un repositorio remoto específico.
+
+		El comando git remote es muy útil para trabajar en proyectos con varios desarrolladores o para mantener copias de seguridad de un proyecto en un servidor externo. Al agregar un repositorio 
+		remoto, se pueden clonar los cambios realizados en otras máquinas o por otros desarrolladores y fusionarlos en el repositorio local. Al eliminar un repositorio remoto, se pueden quitar 
+		referencias a repositorios que ya no se necesitan o que están causando problemas.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Pull">Pull:</h3></p>
+		<p>El comando git pull es un comando de Git que se utiliza para descargar cambios de un repositorio remoto y fusionarlos con el repositorio local. Este comando combina dos acciones en un solo paso: git fetch, 
+		   que descarga los cambios del repositorio remoto, y git merge, que fusiona los cambios descargados con el repositorio local.El comando git pull tiene el siguiente formato básico:git pull "<nombre_remoto> <nombre_rama>" 
+		   Donde <nombre_remoto> es el nombre del repositorio remoto y <nombre_rama> es la rama específica desde la cual se quieren descargar los cambios.El comando git pull es útil para actualizar el repositorio local con los 
+		   últimos cambios realizados por otros desarrolladores o por el mismo usuario en otras máquinas. Al utilizar este comando, se pueden descargar los cambios realizados en el repositorio remoto y fusionarlos con el repositorio 
+		   local de manera rápida y sencilla. Sin embargo, es importante tener en cuenta que el comando git pull puede causar conflictos si los cambios realizados en el repositorio remoto chocan con los cambios realizados localmente.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Clone">Clone:</h3></p>
+		<p>El comando "git clone" se utiliza para crear una copia local de un repositorio remoto de Git. Esto descarga el historial completo de versiones del repositorio y todos sus archivos, y establece una conexión entre la copia local 
+		   y el repositorio remoto para que se puedan realizar operaciones de sincronización.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<p><h3 id="Commit">Commit:</h3></p>
+		<p>El comando "git commit" se utiliza para guardar los cambios realizados en los archivos del repositorio local de Git. Al ejecutar el comando, se crea un nuevo "commit" que representa una instantánea del estado 
+		   actual de los archivos. Este commit se registra en la historia de versiones del repositorio y se puede utilizar para rastrear los cambios realizados a lo largo del tiempo. El comando "git commit" se utiliza junto 
+		   con otros comandos de Git, como "git add", para preparar los archivos y agregarlos al commit. Además, se debe agregar un mensaje descriptivo al commit para ayudar a recordar lo que se cambió en el repositorio.</p>
+
+	</BODY>
+</HTML>
+
