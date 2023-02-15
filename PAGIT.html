@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Comandos Git</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		nav {
+			background-color: #f5f5f5;
+			padding: 10px;
+			text-align: center;
+		}
+		nav a {
+			display: inline-block;
+			margin-right: 10px;
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		nav a:hover {
+			color: #fff;
+			background-color: #333;
+			padding: 5px;
+			border-radius: 5px;
+		}
+		section {
+			padding: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+			line-height: 1.5;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 40px;
+		}
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		pre {
+			background-color: #f5f5f5;
+			padding: 10px;
+			font-size: 16px;
+			overflow-x: auto;
+		}
+	</style>
+</head>
+<body>
+	<header>Comandos Git</header>
+	<nav>
+		<a href="#init">init</a>
+		<a href="#status">status</a>
+		<a href="#branch">branch</a>
+		<a href="#checkout">checkout</a>
+		<a href="#remote">remote</a>
+		<a href="#pull">pull</a>
+		<a href="#push">push</a>
+		<a href="#clone">clone</a>
+		<a href="#commit">commit</a>
+	</nav>
+	<section>
+		<h1 id="init">init</h1>
+		<p>El comando git init se utiliza para inicializar un nuevo repositorio Git en el directorio actual.</p>
+		<h2>Ejemplo:</h2>
+		<pre>
+			$ git init
+		</pre>
+
+		<h1 id="status">status</h1>
+		<p>El comando `git status` muestra el estado actual del repositorio, incluyendo cualquier cambio que no haya sido agregado o confirmado.</p>
+		<h2>Ejemplo:</h2>
+		<pre>
+			$ git status
+		</pre>
+
+		<h1 id="branch">branch</h1>
+		<p>El comando git branch permite crear, listar o eliminar ramas en el repositorio Git.</p>
+		<h2>Ejemplo:</h2>
+		<pre>
+			$ git branch nombre_de_la_rama
+		</pre>
+
+		<h1 id="checkout">checkout</h1>
+		<p>El comando git checkout se utiliza para cambiar a una rama específica o crear una nueva rama y cambiar a ella.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+      		$ git checkout nombre_de_la_rama
+		</pre>
+ 		<h1 id="remote">remote </h1>
+    		<p> El comando git remote permite administrar los repositorios remotos asociados con un repositorio local.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+      		$ git remote add nombre_del_remoto url_del_repositorio
+		</pre>
+ 		<h1 id="pull">pull </h1>
+    		<p>  El comando git pull se utiliza para descargar cambios de un repositorio remoto y fusionarlos con la rama actual.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+     		$ git pull nombre_del_remoto nombre_de_la_rama
+		</pre>
+ 		<h1 id="push">push </h1>
+    		<p>  El comando git push se utiliza para enviar cambios locales a un repositorio remoto.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+     		$ git push nombre_del_remoto nombre_de_la_rama
+		</pre>
+ 		<h1 id="push">push </h1>
+    		<p>  El comando git clone se utiliza para clonar un repositorio remoto en un directorio local.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+   		$ git clone url_del_repositorio
+		</pre>
+ 		<h1 id="clone">clone </h1>
+    		<p>  El comando git clone se utiliza para clonar un repositorio remoto en un directorio local.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+   		$ git clone url_del_repositorio
+		</pre>
+		<h1 id=	"commit">commit </h1>
+    		<p>  El comando git commit se utiliza para guardar los cambios realizados en el repositorio local.</p>
+    		<h3>Ejemplo:</h3>
+    		<pre>
+  		$ git commit -m "mensaje del commit"
+		</pre>
+  		</body>
+		</html>
